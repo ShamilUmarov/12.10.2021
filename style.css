@@ -1,0 +1,43 @@
+
+
+
+:root{
+  --blue: #3b3ded;
+  --gren: #2ba24c;
+  --yellow: #f0b501;
+  --red: #e43e2b;
+  
+}
+
+body{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+
+}
+.google{
+  width: 125px;
+  height: 150px;
+  right: 50px;
+  position: relative;
+  border-top: 50px solid var(--blue);
+  border-right: 50px solid var(--blue);
+  border-bottom: 50px solid var(--blue);
+  border-radius: 0 0 200px 0;
+
+}
+.google::before{
+  display: block;
+  content: '';
+  width: 250px;
+  height: 250px;
+  border-top: 50px solid var(--red);
+  border-left: 50px solid var(--yellow);
+  border-bottom: 50px solid var(--gren);
+  border-right: 50px solid transparent;
+  border-radius: 200px;
+  position: absolute;
+  top: 50px;
+  right: -50px;
+}
